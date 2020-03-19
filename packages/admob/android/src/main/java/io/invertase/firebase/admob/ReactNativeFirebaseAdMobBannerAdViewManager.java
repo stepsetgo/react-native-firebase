@@ -31,6 +31,8 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import android.util.DisplayMetrics;
+import android.view.Display;
 
 import javax.annotation.Nonnull;
 import java.util.Map;
@@ -98,8 +100,23 @@ public class ReactNativeFirebaseAdMobBannerAdViewManager extends SimpleViewManag
 
   @ReactProp(name = "size")
   public void setSize(ReactViewGroup reactViewGroup, String value) {
-    size = ReactNativeFirebaseAdMobCommon.stringToAdSize(value);
+    if (value.equals("ADAPTIVE")) {
 
+      DisplayMetrics outMetrics = reactViewGroup.getResources().getDisplayMetrics();
+
+      float density = outMetrics.density;
+
+      float adWidthPixels = outMetrics.widthPixels;
+
+      // Getting full width of the screen
+      int fullWidth = (int) (adWidthPixels / density);
+
+      size = AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(reactViewGroup.getContext(), fullWidth);
+
+    } else {
+      size = ReactNativeFirebaseAdMobCommon.stringToAdSize(value);
+    }
+    
     int width;
     int height;
     WritableMap payload = Arguments.createMap();
