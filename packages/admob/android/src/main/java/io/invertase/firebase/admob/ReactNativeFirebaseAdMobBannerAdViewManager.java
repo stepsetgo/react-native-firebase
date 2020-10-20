@@ -100,6 +100,7 @@ public class ReactNativeFirebaseAdMobBannerAdViewManager extends SimpleViewManag
   public void setSize(ReactViewGroup reactViewGroup, String value) {
     if (value.equals("ADAPTIVE")) {
 
+
       DisplayMetrics outMetrics = reactViewGroup.getResources().getDisplayMetrics();
 
       float density = outMetrics.density;
