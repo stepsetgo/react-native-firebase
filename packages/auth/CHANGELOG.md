@@ -3,6 +3,43 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/invertase/react-native-firebase/compare/fc8c4c0622f8e6814879d0306f66012df5b83cd8...v10.0.0) (2020-11-17)
+
+### Bug Fixes
+
+- **auth, android:** fixed user collision handling with apple sign-in ([#4487](https://github.com/invertase/react-native-firebase/issues/4487)) ([6a8f8ad](https://github.com/invertase/react-native-firebase/commit/6a8f8ad9b05d9510948206cc9837547cab124c63))
+- **auth, android:** gracefully handle exception creating PhoneCredential ([8ead604](https://github.com/invertase/react-native-firebase/commit/8ead60431c2aae4193ed79eb10dc3b43480c5d77))
+- **auth, android:** handle failure to upgrade anonymous user ([41fad36](https://github.com/invertase/react-native-firebase/commit/41fad3629437059a5e81d29f82c79589286aaea2)), closes [#4487](https://github.com/invertase/react-native-firebase/issues/4487)
+
+### Features
+
+- **auth, emulator:** add useEmulator javascript code + jest tests ([532adb5](https://github.com/invertase/react-native-firebase/commit/532adb569413e8a5e5077d5f47582a0a300b3045))
+- **auth, emulator:** implement native useEmulator calls ([81369a0](https://github.com/invertase/react-native-firebase/commit/81369a089e3ffc5be53d7651fa5a9dacf5bfa7b6))
+
+### BREAKING CHANGES
+
+- breaking change to mark new internal versioning requirements.
+
+## [9.3.5](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/auth@9.3.4...@react-native-firebase/auth@9.3.5) (2020-11-10)
+
+**Note:** Version bump only for package @react-native-firebase/auth
+
+## [9.3.4](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/auth@9.3.3...@react-native-firebase/auth@9.3.4) (2020-11-10)
+
+### Bug Fixes
+
+- **ios, auth:** move to non-deprecated upstream APIs ([1f2a109](https://github.com/invertase/react-native-firebase/commit/1f2a109d4e04bc10a5a0b93b3bebe78ec9be313b))
+
+## [9.3.3](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/auth@9.3.2...@react-native-firebase/auth@9.3.3) (2020-11-10)
+
+### Bug Fixes
+
+- **auth, android:** fixed user collision handling with apple sign-in ([#4487](https://github.com/invertase/react-native-firebase/issues/4487)) ([6a8f8ad](https://github.com/invertase/react-native-firebase/commit/6a8f8ad9b05d9510948206cc9837547cab124c63))
+
+## [9.3.2](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/auth@9.3.1...@react-native-firebase/auth@9.3.2) (2020-10-30)
+
+**Note:** Version bump only for package @react-native-firebase/auth
+
 ## [9.3.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/auth@9.3.0...@react-native-firebase/auth@9.3.1) (2020-10-16)
 
 **Note:** Version bump only for package @react-native-firebase/auth

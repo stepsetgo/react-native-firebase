@@ -3,9 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/invertase/react-native-firebase/compare/fc8c4c0622f8e6814879d0306f66012df5b83cd8...v10.0.0) (2020-11-17)
+
+### Features
+
+- **app, ios:** bump firebase-ios-sdk to 7.1.0 from 7.0.0 ([#4533](https://github.com/
+
+### BREAKING CHANGES
+
+- breaking change to mark new internal versioning requirements.
+
+# [9.0.0](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/app@8.4.7...@react-native-firebase/app@9.0.0) (2020-11-10)
+
+### Bug Fixes
+
+- **tests, emulator:** centralize startup, correct CWD ([79c1f80](https://github.com/invertase/react-native-firebase/commit/79c1f801965f74f9fc0233c96f05db103e9f8e84))
+
+### Features
+
+- BREAKING forward-port to firebase-android-sdk v26 / firebase-ios-sdk v7 ([70974d4](https://github.com/invertase/react-native-firebase/commit/70974d41f857a0f7fc09cb5235856d3748b30117)), closes [/firebase.google.com/support/release-notes/android#2020-10-27](https://github.com/invertase/react-native-firebase/issues/2020-10-27) [/firebase.google.com/support/release-notes/ios#version*700*-\_october_26_2020](https://github.com/invertase/react-native-firebase/issues/version_700_-_october_26_2020)
+
+### BREAKING CHANGES
+
+- alter ML imports, check iOS linking, remove old API as noted
+
+## [8.4.7](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/app@8.4.6...@react-native-firebase/app@8.4.7) (2020-10-30)
+
+**Note:** Version bump only for package @react-native-firebase/app
+
 ## [8.4.6](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/app@8.4.5...@react-native-firebase/app@8.4.6) (2020-10-16)
 
 **Note:** Version bump only for package @react-native-firebase/app
+
+**Note:** You _may_ need to re-download your firebase config files (android json / ios plist) to handle changes in the underlying SDKs as they migrate from instance id to installations. A symptom would be `NativeFirebaseError: [messaging/unknown] FIS_AUTH_ERROR`. [Upstream reference doc](https://github.com/firebase/firebase-android-sdk/blob/master/firebase-installations/REQUIRED_FIREBASE_OPTIONS_ANDROID.md#what-do-i-need-to-do) / [Related issue #4466](https://github.com/invertase/react-native-firebase/issues/4466)
 
 ## [8.4.5](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/app@8.4.4...@react-native-firebase/app@8.4.5) (2020-09-30)
 

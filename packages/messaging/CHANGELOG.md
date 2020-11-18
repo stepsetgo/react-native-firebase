@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/invertase/react-native-firebase/compare/fc8c4c0622f8e6814879d0306f66012df5b83cd8...v10.0.0) (2020-11-17)
+
+### BREAKING CHANGES
+
+- breaking change to mark new internal versioning requirements.
+
+## [8.0.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/messaging@8.0.0...@react-native-firebase/messaging@8.0.1) (2020-11-10)
+
+**Note:** Version bump only for package @react-native-firebase/messaging
+
+# [8.0.0](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/messaging@7.9.2...@react-native-firebase/messaging@8.0.0) (2020-11-10)
+
+### Bug Fixes
+
+- **messaging:** BREAKING drop iOS FCM direct channel + upstream send APIs ([22ede33](https://github.com/invertase/react-native-firebase/commit/22ede3303d640364782a14a6813a5b8efc9e459e))
+
+### BREAKING CHANGES
+
+- **messaging:** Upstream send should be done with cloud functions. FCM Direct channel has no replacement.
+
+## [7.9.2](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/messaging@7.9.1...@react-native-firebase/messaging@7.9.2) (2020-10-30)
+
+**Note:** Version bump only for package @react-native-firebase/messaging
+
 ## [7.9.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/messaging@7.9.0...@react-native-firebase/messaging@7.9.1) (2020-10-16)
 
 **Note:** Version bump only for package @react-native-firebase/messaging

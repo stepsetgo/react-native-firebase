@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/invertase/react-native-firebase/compare/fc8c4c0622f8e6814879d0306f66012df5b83cd8...v10.0.0) (2020-11-17)
+
+### BREAKING CHANGES
+
+- breaking change to mark new internal versioning requirements.
+
+## [7.10.3](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.10.2...@react-native-firebase/firestore@7.10.3) (2020-11-11)
+
+### Bug Fixes
+
+- **firestore:** add missing MIN_SECONDS constant to FirestoreTimestamp ([#4531](https://github.com/invertase/react-native-firebase/issues/4531)) ([11127c1](https://github.com/invertase/react-native-firebase/commit/11127c177b217f3ddfca250664667a20918df65c))
+
+## [7.10.2](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.10.1...@react-native-firebase/firestore@7.10.2) (2020-11-10)
+
+**Note:** Version bump only for package @react-native-firebase/firestore
+
+## [7.10.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.10.0...@react-native-firebase/firestore@7.10.1) (2020-11-10)
+
+**Note:** Version bump only for package @react-native-firebase/firestore
+
+# [7.10.0](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.9.1...@react-native-firebase/firestore@7.10.0) (2020-11-10)
+
+### Bug Fixes
+
+- **firestore:** add test case for orderby before where query ([#4459](https://github.com/invertase/react-native-firebase/issues/4459)) ([fdf978a](https://github.com/invertase/react-native-firebase/commit/fdf978aed8044f1ba010a9213a4f81cb9b397df7))
+
+### Features
+
+- **firestore:** add toJSON() and valueOf() to FirestoreTimestamp ([#4439](https://github.com/invertase/react-native-firebase/issues/4439)) ([aca6992](https://github.com/invertase/react-native-firebase/commit/aca6992edfca7537629131b1f223981452cd95fb)), closes [/github.com/firebase/firebase-js-sdk/blob/7c1c7f182b59e0fc7d175f53e5e2360cdee0ccab/packages/firestore/src/api/timestamp.ts#L162-L182](https://github.com/invertase/react-native-firebase/issues/L162-L182)
+
+## [7.9.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.9.0...@react-native-firebase/firestore@7.9.1) (2020-10-30)
+
+**Note:** Version bump only for package @react-native-firebase/firestore
+
+# [7.9.0](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.8.7...@react-native-firebase/firestore@7.9.0) (2020-10-30)
+
+### Features
+
+- **firestore:** query operators: 'not-in' & '!=' ([#4474](https://github.com/invertase/react-native-firebase/issues/4474)) ([9e68faf](https://github.com/invertase/react-native-firebase/commit/9e68faf0310bd5f9c3347cad3dd5b80c9c0582e1))
+
 ## [7.8.7](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/firestore@7.8.6...@react-native-firebase/firestore@7.8.7) (2020-10-16)
 
 **Note:** Version bump only for package @react-native-firebase/firestore

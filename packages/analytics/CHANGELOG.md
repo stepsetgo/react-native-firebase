@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/invertase/react-native-firebase/compare/fc8c4c0622f8e6814879d0306f66012df5b83cd8...v10.0.0) (2020-11-17)
+
+### BREAKING
+
+- remove deprecated analytics methods ([18f5b0f](https://github.com/invertase/react-native-firebase/commit/18f5b0f7e65a3bddc92d3d23e31efb42a518ec12))
+
+## [8.0.1](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/analytics@8.0.0...@react-native-firebase/analytics@8.0.1) (2020-11-10)
+
+**Note:** Version bump only for package @react-native-firebase/analytics
+
+# [8.0.0](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/analytics@7.6.10...@react-native-firebase/analytics@8.0.0) (2020-11-10)
+
+### Bug Fixes
+
+- **analytics:** BREAKING drop deprecated setMinimumSessionDuration API ([a675cd7](https://github.com/invertase/react-native-firebase/commit/a675cd7f7cf808e6a6d10cc174eeff3007ceac58))
+
+### BREAKING CHANGES
+
+- **analytics:** there is no replacement for the setMinimumSessionDuration API
+
+## [7.6.10](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/analytics@7.6.9...@react-native-firebase/analytics@7.6.10) (2020-11-10)
+
+### Bug Fixes
+
+- **analytics:** added a validation for length in analytics().logEvent(name, params) ([#4522](https://github.com/invertase/react-native-firebase/issues/4522)) ([107b07d](https://github.com/invertase/react-native-firebase/commit/107b07dc15f1199e08384f0ad5bbbff44f738056))
+
+## [7.6.9](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/analytics@7.6.8...@react-native-firebase/analytics@7.6.9) (2020-10-30)
+
+**Note:** Version bump only for package @react-native-firebase/analytics
+
 ## [7.6.8](https://github.com/invertase/react-native-firebase/compare/@react-native-firebase/analytics@7.6.7...@react-native-firebase/analytics@7.6.8) (2020-10-16)
 
 **Note:** Version bump only for package @react-native-firebase/analytics

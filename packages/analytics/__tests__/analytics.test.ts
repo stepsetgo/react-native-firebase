@@ -48,20 +48,6 @@ describe('Analytics', () => {
 
   it('errors if milliseconds not a number', () => {
     // @ts-ignore test
-    expect(() => firebase.analytics().setMinimumSessionDuration('123')).toThrowError(
-      "'milliseconds' expected a number value",
-    );
-  });
-
-  it('errors if milliseconds is less than 0', () => {
-    // @ts-ignore test
-    expect(() => firebase.analytics().setMinimumSessionDuration(-100)).toThrowError(
-      "'milliseconds' expected a positive number value",
-    );
-  });
-
-  it('errors if milliseconds not a number', () => {
-    // @ts-ignore test
     expect(() => firebase.analytics().setSessionTimeoutDuration('123')).toThrowError(
       "'milliseconds' expected a number value",
     );
@@ -117,26 +103,6 @@ describe('Analytics', () => {
     );
   });
 
-  it('call methods, getters & setters that fire a console.warn() & have no return value', () => {
-    const analytics = firebase.analytics();
-    // @ts-ignore test
-    const logEcommercePurchaseSpy = jest.spyOn(analytics, 'logEcommercePurchase');
-    // @ts-ignore test
-    const logPresentOfferSpy = jest.spyOn(analytics, 'logPresentOffer');
-    // @ts-ignore test
-    const logPurchaseRefundSpy = jest.spyOn(analytics, 'logPurchaseRefund');
-    // @ts-ignore test
-    analytics.logEcommercePurchase();
-    // @ts-ignore test
-    analytics.logPresentOffer();
-    // @ts-ignore test
-    analytics.logPurchaseRefund();
-
-    expect(logEcommercePurchaseSpy).toBeCalled();
-    expect(logPresentOfferSpy).toBeCalled();
-    expect(logPurchaseRefundSpy).toBeCalled();
-  });
-
   describe('logEvent()', () => {
     it('errors if name is not a string', () => {
       // @ts-ignore test
@@ -160,7 +126,7 @@ describe('Analytics', () => {
 
     it('errors if name not alphanumeric', () => {
       expect(() => firebase.analytics().logEvent('!@£$%^&*')).toThrowError(
-        "firebase.analytics().logEvent(*) 'name' invalid event name '!@£$%^&*'. Names should contain 1 to 32 alphanumeric characters or underscores.",
+        "firebase.analytics().logEvent(*) 'name' invalid event name '!@£$%^&*'. Names should contain 1 to 40 alphanumeric characters or underscores.",
       );
     });
 

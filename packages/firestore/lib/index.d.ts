@@ -1240,7 +1240,7 @@ export namespace FirebaseFirestoreTypes {
      * ```
      *
      * @param fieldPath The path to compare.
-     * @param opStr The operation string (e.g "<", "<=", "==", ">", ">=", "array-contains", "array-contains-any", "in").
+     * @param opStr The operation string (e.g "<", "<=", "==", ">", ">=", "!=", "array-contains", "array-contains-any", "in", "not-in").
      * @param value The comparison value.
      */
     where(fieldPath: keyof T | FieldPath, opStr: WhereFilterOp, value: any): Query<T>;
@@ -1255,9 +1255,11 @@ export namespace FirebaseFirestoreTypes {
     | '=='
     | '>'
     | '>='
+    | '!='
     | 'array-contains'
     | 'array-contains-any'
-    | 'in';
+    | 'in'
+    | 'not-in';
 
   /**
    * A `QuerySnapshot` contains zero or more `QueryDocumentSnapshot` objects representing the results of a query. The documents
@@ -1514,11 +1516,28 @@ export namespace FirebaseFirestoreTypes {
     toDate(): Date;
 
     /**
-     * Convert a timestamp to a numeric timestamp (in milliseconds since epoch). This operation causes a loss of precision.
+     * Convert a Timestamp to a numeric timestamp (in milliseconds since epoch). This operation causes a loss of precision.
      *
      * The point in time corresponding to this timestamp, represented as the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
      */
     toMillis(): number;
+
+    /**
+     * Convert a timestamp to a string in format "FirestoreTimestamp(seconds=`seconds`, nanoseconds=`nanoseconds`)",
+     * with the `seconds` and `nanoseconds` replaced by the values in the Timestamp object
+     */
+    toString(): string;
+
+    /**
+     * Convert a Timestamp to a JSON object with seconds and nanoseconds members
+     */
+    toJSON(): { seconds: number; nanoseconds: number };
+
+    /**
+     * Converts this object to a primitive string, which allows Timestamp objects to be compared
+     * using the `>`, `<=`, `>=` and `>` operators.
+     */
+    valueOf(): string;
   }
 
   /**
